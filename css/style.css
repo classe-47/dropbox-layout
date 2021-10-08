@@ -10,12 +10,11 @@ body {
 }
 
 a {
-    text-decoration: none;
+    color: black;
+    text-decoration: none;    
 }
 
-a:hover {
-    text-decoration: underline;
-}
+
 
 .row::after {
     content: "";
@@ -23,10 +22,22 @@ a:hover {
     clear: both;
 }
 
+/* button */
+.btn {
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+.blu {
+    background-color: #0061ff;
+    color: white;
+}
+
+
 /* header */
 header {
     height: 80px;
-    line-height: 80px;
+    line-height: 76px;
     border-bottom: 1px solid gray;
 }
 
@@ -43,15 +54,27 @@ nav#main-nav li {
     list-style: none;
 }
 
+nav#main-nav li:hover {
+    border-bottom: 2px solid black;
+}
+
 #logo img {
     vertical-align: text-bottom;
 }
 
 nav#main-nav a {
-    color: black;
     margin: 0 18px;
+    display: inline-block;
 }
 
+nav#main-nav a.btn {
+    display: inline;
+}
+
+nav#main-nav li#logo:hover,
+nav#main-nav li.last:hover {
+    border-bottom: none;
+}
 
 
 
