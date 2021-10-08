@@ -47,6 +47,12 @@ header {
     height: 80px;
     line-height: 76px;
     border-bottom: 1px solid gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;    
+    z-index: 9999;
 }
 
 nav#main-nav ul {
