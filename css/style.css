@@ -9,10 +9,50 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* header */
 header {
     height: 80px;
+    line-height: 80px;
+    border-bottom: 1px solid gray;
 }
+
+nav#main-nav ul {
+    float: left;
+}
+
+nav#main-nav ul:last-child {
+    float: right;
+}
+
+nav#main-nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+#logo img {
+    vertical-align: text-bottom;
+}
+
+nav#main-nav a {
+    color: black;
+    margin: 0 18px;
+}
+
+
 
 
 /* jumbo */
@@ -23,9 +63,9 @@ header {
 }
 
 /* debug */
-.debug header {
+/* .debug header {
     background-color: lightgrey;
-}
+} */
 
 .debug main {
     height: 1000px;
