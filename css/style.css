@@ -14,12 +14,20 @@ a {
     text-decoration: none;    
 }
 
-
-
 .row::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.container-lg {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 /* button */
@@ -62,6 +70,7 @@ nav#main-nav li:hover {
     vertical-align: text-bottom;
 }
 
+/* lasciamo display inline-block se vogliamo estendere l'area cliccabile */
 nav#main-nav a {
     margin: 0 18px;
     display: inline-block;
@@ -71,29 +80,72 @@ nav#main-nav a.btn {
     display: inline;
 }
 
+/* toglie la sottolineatura al logo e al pulsante inizia */
 nav#main-nav li#logo:hover,
 nav#main-nav li.last:hover {
     border-bottom: none;
 }
 
 
-
 /* jumbo */
 
 #jumbotron {
-    height: 500px;
+    /* height: 500px; */
     background-color: #b4d0e7;
 }
 
+#jumbotron h1 {
+    font-size: 76px;
+    padding-top: 60px;
+}
+
+
+#jumbotron img {
+    width: 100%;
+}
+
+#jumbotron .col-sx {
+    width: 35%;
+    margin-right: 5%;
+}
+
+#jumbotron .col-dx {
+    width: 60%;
+}
+
+#jumbotron .container-lg {
+    position: relative;
+    bottom: -80px;
+}
+
 /* debug */
+
 /* .debug header {
     background-color: lightgrey;
 } */
+
+/* .debug .container-lg {
+    height: 100%;
+    background-color: lightgrey;
+} */
+
+/* .debug .col-sx {
+    height: 400px;
+    background-color: red;
+}
+
+.debug .col-dx {
+    height: 400px;
+    background-color: blue;
+} */
+
 
 .debug main {
     height: 1000px;
     background-color: violet;
 }
+
+
 
 .debug footer {
     height: 400px;
